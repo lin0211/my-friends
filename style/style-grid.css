@@ -1,0 +1,67 @@
+body,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+/* header */
+.header {
+  background-color: rgb(224, 224, 174);
+  width: 752px;
+  height: 64px;
+  display: grid;
+  grid-template-columns: 48px auto 48px;
+  grid-template-rows: auto 48px;
+  grid-column-gap: 10px;
+}
+
+.header-logo {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin: 0;
+  justify-self: center;
+}
+
+.header-logo img {
+  display: block;
+}
+
+.profile {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  justify-self: center;
+}
+
+.profile img {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+/* main */
+.main {
+  background-color: pink;
+  width: 752px;
+}
+
+/* footer */
+.footer-wrap {
+  background-color: rgb(164, 164, 232);
+  height: 72px;
+  width: 100vw;
+}
+
+.footer {
+  width: 752px;
+  height: inherit;
+  background-color: rgb(114, 114, 234);
+  margin: auto;
+}
